@@ -35,6 +35,31 @@ After choosing five as the optimal number of clusters from the dataset , we perf
 
 Since KMeans is more focused on lower variance within clusters, the results of this is based more on behavioural types of the users .
 
+Cluster O - low activity and low variance users : these users generally rate infrequently and gives similar ratings 
+
+Cluster 1 - High activity and consistent raters : users here watch and rate a lot but in a more uniform way
+
+Cluster 2 - Critics with low avrage but high variance : they tend to give a very selective evaluvation .
+
+Cluster 3 - High average raters : these users rate movies highly in average and generally has moderate to low variability
+
+Cluster 4 - Extreme active users : thses users have a very high total rating ,large number of unique movies and a long activity log
+
+
+
+Next we perform Hiracheal Clustering, as Hiracheal clustering uses the distance between groups unlike KMeans , the clusters differ a bit 
+
+CLuster A - Very low engagement users: these users rate less, has low diviersity and has low activity
+
+CLuster B - Moderate Users with stable habits: users display rrgular ratings but not in extremes 
+
+Cluster C - High activity anf highly diverse users : people rate many movies here and also have a high variety in their choices , they also are active for longer time periods 
+
+Cluster D - High variable behaved users: Users with larger starnderd deviation in their rating falls here , they are considerd to be inconsistent 
+
+Cluster E - Positive biased users:Consistent high average users with normal activity patterns are classifed here. 
+
+a scatter plot is uded to plot this data for better visualization 
 
 
 ## Comparison of Models
