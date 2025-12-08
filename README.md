@@ -1,6 +1,6 @@
 # Machine-Learning-2025
-##Audience Decode
-###Group Members:
+## Audience Decode
+### Group Members:
 - Zygimantas Kazlauskas (322271)
 - Kottage Don Chiara (315161)
 - Elvin Magaia (315431)
