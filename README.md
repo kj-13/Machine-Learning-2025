@@ -64,6 +64,12 @@ a scatter plot is uded to plot this data for better visualization
 
 ## Comparison of Models
 
+This part evaluates the effectiveness of different clustering approaches in identifying meaningful viewer behaviour patterns. The analysis begins by constructing a standardised feature matrix from user statistics, incorporating key behavioural indicators such as total ratings, average rating, variability, number of unique movies watched and overall activity span. These metrics provide a consistent foundation for comparing clustering models.
+
+
+A baseline comparison is then performed by contrasting real clustering outputs with randomly asigned labels. Methods such as KMeans, Agglomerative Clustering(Ward linkage) and DBSCAN are applied and evaluated using the silhouette score, which quantifies how well-separated and internally coherent the resulting groups are. This confirms whether genuine structure exists in the data and which models capture it most effectively.
+Dimensionality reduction is examined by applying KMeans both to the full feature space and to a two-dimensional PCA projection. This reveals how much behavioural information is preserved in lower dimensions  and whether PCA enhances or weakens the separation between user groups. The PCA scatter plot provides an interpretable visual representation of these patterns.
+Finally, the analysis incorporates temporal dynamics by grouping viewers into early and late cohorts basedon their first recorded rating. The distribution of cluster memberships across these cohorts is compared to determine whether behavioural profiles change over time. Annual activity trends are also visualized to show how viewer engagement evolves throughout the dataset.
 
 ## Visualization
 
