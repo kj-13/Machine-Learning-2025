@@ -35,7 +35,7 @@ After choosing five as the optimal number of clusters from the dataset , we perf
 
 Since KMeans is more focused on lower variance within clusters, the results of this is based more on behavioural types of the users .
 
-Cluster O - low activity and low variance users : these users generally rate infrequently and gives similar ratings 
+Cluster 0 - low activity and low variance users : these users generally rate infrequently and gives similar ratings 
 
 Cluster 1 - High activity and consistent raters : users here watch and rate a lot but in a more uniform way
 
