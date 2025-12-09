@@ -70,7 +70,7 @@ a scatter plot is uded to plot this data for better visualization
 
 Silhouette score and Davies-Bouldin score was checked in the model to see Hierarchical model's performance
 
-## Results
+## Comparison and results
 
 In Part 3, the goal was to evaluate and compare the three models used in the project: Linear Regression, KMeans clustering, and Hierarchical clustering. Each experiment focuses on a different aspect of model performance and provides insights into how well the models work for predicting movie ratings and grouping users based on their behavior.
 
@@ -84,9 +84,12 @@ The second experiment compares the two clustering models used in the project: KM
 The third experiment looks at how interpretable and practically useful the clusters are. For both KMeans and Hierarchical clustering, we compare the size of each cluster and compute the average values of key user-behavior features, such as the number of ratings, average rating, consistency of ratings, number of unique movies watched, and engagement levels. By examining these profiles, we can understand what types of viewer groups each model creates and how distinct those groups are. This helps determine which clustering method provides more informative and actionable insights about user behaviour.
 
 
-## Visualization
+## Visualization and results
 
-This part finilizes the project by interpreting the behavioural meaning of the viewer clusters and checking whether the segmentation is affected by temporal or ating related biases. It summarizes each cluster using key behavioural metrices such as total ratings, avarage rating, rating variability and the number of unique movies watched, allowing clear identification of distincs user groups. It then evaluates fairness by examining whether clusters differ systematically in the year users first rated a movie, and wether activity or rating patterns create distortions in the grouping. Finally, it exports an enriched dataset containing all user features and cluster labels, fulfilling the project requirement to validate, interpret and prepare the clustering results for reporting. 
+
+This section completes the project by generating insights from the models built earlier and by evaluating the fairness and interpretability of the clustering results. First, it summarizes Experiment 1 from Part 3 by comparing the Linear Regression model against a baseline that predicts the mean rating. The code displays key error metrics (MSE, RMSE, MAE, R²) and visualizes the differences using bar charts, allowing clear interpretation of whether the regression model provides meaningful improvement over the baseline. This fulfills the task requirement of interpreting and summarizing model performance from earlier stages.
+
+The remaining subsections analyze the KMeans clustering results produced in Part 2. The code computes behavioural profiles for each cluster using aggregated metrics such as total ratings, average rating, rating consistency, and content diversity. It then performs fairness checks by assessing whether clusters differ systematically by the year of first activity, ensuring that clusters are not driven by temporal bias. Additional behavioural fairness analysis examines whether clusters disproportionately consist of highly active or low-activity users or users who tend to rate unusually high or low. These results are visualized using bar charts, enabling interpretation of behavioural differences across viewer segments. Finally, the code exports an enriched dataset containing user features, cluster labels, and temporal information, completing the task’s requirement to produce interpretable outputs, fairness assessments, and final analytical artifacts.
 
 
 ## Conclusion
